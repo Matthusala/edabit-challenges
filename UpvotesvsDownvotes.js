@@ -1,4 +1,4 @@
-function calculateNetVote(vote) {
+const calculateNetVote = (vote) => {
   if (
     typeof votes !== "object" ||
     !votes.hasOwnProperty("upvotes") ||
@@ -6,4 +6,4 @@ function calculateNetVote(vote) {
   ) {
     throw new Error("Invalid");
   }
-}
+};
