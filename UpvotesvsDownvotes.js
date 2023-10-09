@@ -10,3 +10,7 @@ const calculateNetVote = (vote) => {
 
   return netVotes;
 };
+const voteCounts = {
+  upvotes: 10,
+  downvotes: 5,
+};
