@@ -6,4 +6,7 @@ const calculateNetVote = (vote) => {
   ) {
     throw new Error("Invalid");
   }
+  const netVotes = votes.upvotes - votes.downvotes;
+
+  return netVotes;
 };
