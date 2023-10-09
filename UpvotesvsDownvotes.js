@@ -1,18 +1,3 @@
-const calculateNetVote = (vote) => {
-  if (
-    typeof votes !== "object" ||
-    !votes.hasOwnProperty("upvotes") ||
-    !votes.hasOwnProperty("downvotes")
-  ) {
-    throw new Error("Invalid");
-  }
-  const netVotes = votes.upvotes - votes.downvotes;
-
-  return netVotes;
+const calcuateNetVote = (vote) => {
+  return vote.update - vote.downvote;
 };
-const voteCounts = {
-  upvotes: 10,
-  downvotes: 5,
-};
-const netVotes = calculateNetVotes(voteCounts);
-console.log(`Net Votes: ${netVotes}`);
