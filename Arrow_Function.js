@@ -9,3 +9,11 @@ const person = {
 };
 
 person.printActions();
+
+/*
+Output:
+js
+Diksha likes to bike 
+Diksha likes to hike 
+Diksha likes to ski
+*/
