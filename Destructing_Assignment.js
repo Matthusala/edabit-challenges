@@ -4,6 +4,4 @@ const { title, price, description } = {
   description: "The iPhone is a smartphone developed by Apple",
 };
 
-console.log(title);
-console.log(price);
-console.log(description);
+console.log(title, price, description);
